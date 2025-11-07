@@ -494,6 +494,22 @@ function ContactSection() {
           <p className="text-lg text-gray-600 dark:text-gray-400">Let's connect and make something beautiful</p>
         </motion.div>
 
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.3, ease: 'easeOut', delay: 0.1 }}
+          className="mb-8 p-6 bg-white dark:bg-[#1E1E1E] rounded-lg border-l-4 border-[#D4AF37]"
+        >
+          <h3 className="text-xl font-bold mb-2 text-[#D4AF37]">For Bookings Contact:</h3>
+          <a 
+            href="mailto:ministerchigozieikpo@gmail.com"
+            className="text-lg hover:text-[#D4AF37] transition-colors flex items-center gap-2"
+          >
+            <Mail size={20} />
+            ministerchigozieikpo@gmail.com
+          </a>
+        </motion.div>
+
         <div className="grid md:grid-cols-2 gap-12">
           <motion.form
             initial={{ opacity: 0, x: -30 }}
